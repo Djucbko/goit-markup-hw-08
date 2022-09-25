@@ -1,0 +1,38 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ @media screen and (min-width: $mobile) {
+  .container{
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;} 
+  }
+    @media screen and (min-width: $tablet){
+      .container{
+        width: 738px;
+    
+      }
+    }
+        @media screen and (min-width: $desktop){
+          .container {width:1200px;
+        }
+      }
+  // .container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   @media screen and (min-width: $mobile) {
+//     width: $mobile;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     width: $tablet;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: $desktop;
+//   }
+// }

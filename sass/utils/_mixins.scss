@@ -1,0 +1,18 @@
+@mixin font($fs, $fw, $lh){
+    font-size: $fs; 
+    font-weight: $fw;
+    line-height:calc($lh / $fs);
+    }
+@mixin paddingtb($pt,$pb){
+    padding-top: $pt;
+    padding-bottom: $pb;
+   }
+   @mixin paddingrl($pr, $pl){
+    padding-right: $pr;
+    padding-left: $pl;
+   }
+   @mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+  }

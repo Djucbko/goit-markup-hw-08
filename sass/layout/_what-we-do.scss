@@ -1,0 +1,31 @@
+.what-we-do {
+    padding-top: 0;
+}
+
+.imgs-list {
+    display: flex;
+
+}
+
+.imgs-list__imgs:not(:last-child) {
+    margin-right: 30px;
+}
+
+.imgs-list__imgs {
+    position: relative;
+}
+
+.imgs-list__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 27px 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}

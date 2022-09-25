@@ -1,0 +1,21 @@
+.header {
+    border: 1px solid #ECECEC;
+}
+.header__main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+ }
+ @media screen and (min-width: $tablet){
+    .open-mobile-menu{
+        display: none;
+    }
+   .header__main-nav {
+     display: flex;
+    align-items: center;
+    
+   }
+ 
+ }
+  

@@ -1,0 +1,35 @@
+.features-list {
+    display: flex;
+}
+.features-list__head:not(:last-child) {
+     margin-right: $card-set-gap;
+}
+.features-list__head {
+    flex-basis: calc(100% / 4 - $card-set-gap);
+}
+.features-list__header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.features-list__text {
+    color: $description-about-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
+.features-list__logo {
+    @extend %display-justify;
+
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    
+}
