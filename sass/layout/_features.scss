@@ -1,12 +1,10 @@
 .features-list {
-    display: flex;
+    text-align: center;
 }
 .features-list__head:not(:last-child) {
-     margin-right: $card-set-gap;
+     margin-bottom: $card-set-gap;
 }
-.features-list__head {
-    flex-basis: calc(100% / 4 - $card-set-gap);
-}
+
 .features-list__header {
     margin-bottom: 10px;
     font-weight: 700;
@@ -26,10 +24,114 @@
 }
 
 .features-list__logo {
-    @extend %display-justify;
-
+   
+    @include flexCenter();
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
     
+}
+
+// Mobile //
+@media screen and (min-width: $mobile){ 
+    .features-list{
+        text-align: center;
+        
+    }
+    .features-list__head{
+        margin-bottom: 30px;
+    }
+    .features-list__logo{
+    @include flexCenter();
+    
+background-color: #f5f4fa;
+    height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+}
+.features-list__header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-list__text {
+    color: $description-about-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+}
+// Tablet//
+@media screen and (min-width: $tablet) {
+.features-list {
+    
+    @include flexCenter();
+    gap:$card-set-gap;  
+}
+.features-list__head{
+    width: calc((100% - 60px) / 2);
+}
+.features-list__logo{
+    background-color: #f5f4fa;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+}
+.features-list__header {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-list__text {
+    
+    color: $description-about-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+}
+//Desktop//
+@media screen and (min-width: $desktop) {
+    .features-list {
+        @include flexCenter(flex, center, stretch);
+        flex-wrap: wrap;
+        gap: $card-set-gap;
+        
+    }
+
+    .features-list__head {
+        width: calc((100% - 90px) / 4);
+    }
+
+    .features-list__logo {
+        @include flexCenter();
+
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        background-color: #f5f4fa;
+    }
+
+    .features-list__header {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    .features-list__text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
