@@ -148,24 +148,83 @@
         </ul>
         </div>
       </section>
-      <!-- <section class="section what-we-do">
+      <section class="section what-we-do">
         <div class="container">
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="list imgs-list">
-          <li class="imgs-list__imgs"><img src="./images/img.jpg" alt="coding" width="370" /><p class="imgs-list__text">десктопні додатки</p></li>
-          <li class="imgs-list__imgs"><img src="./images/img-1.jpg" alt="phone set" width="370" /><p class="imgs-list__text">мобільні додатки</p></li>
-          <li class="imgs-list__imgs"><img src="./images/img-2.jpg" alt="web design" width="370" /><p class="imgs-list__text">дизайнерські рішення</p></li>
+          <li class="imgs-list__imgs">
+              <img
+                srcset="
+                  ./images/metier-desktop-apps.jpg 1x,
+                  ./images/metier-desktop-apps-@2x.jpg 2x
+                "
+                src="./images/metier-desktop-apps.jpg"
+                alt="Десктопные приложения"
+                width="370"
+                height="294"
+              />
+              <p class="imgs-list__text">десктопні додатки</p>
+              
+            </li>
+            <li class="imgs-list__imgs">
+              <img
+                srcset="
+                  ./images/metier-mobile-apps.jpg 1x,
+                  ./images/metier-mobile-apps-@2x.jpg 2x
+                "
+                src="./images/mobile-apps.jpg"
+                alt="Десктопные приложения"
+                width="370"
+                height="294"
+              />
+              <p class="imgs-list__text">мобільні додатки</p>
+              </li>
+              <li class="imgs-list__imgs">
+              <img
+                srcset="
+                  ./images/metier-design-solutions.jpg 1x,
+                  ./images/metier-design-solutions-@2x.jpg 2x
+                "
+                src="./images/metier-design-solutions.jpg"
+                alt="Десктопные приложения"
+                width="370"
+                height="294"
+              />
+              <p class="imgs-list__text">дизайнерські рішення</p>
+              </li>
         </ul>
-        
         </div>
-      </section> -->
-      <!-- <section class="our-team section">
+      </section>
+      <section class="our-team section">
         <div class="container">
           <h2 class="title">Наша Команда</h2>
         <ul class="list our-list">
-          <li class="background our-list__team">
-            <img src="./images/img-3.jpg" alt="photo1" width="270" />
-           <div class="team-container">
+            <li class="our-list__team">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop-product-designer.jpg     1x,
+                    ./images/team-desktop-product-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet-product-designer.jpg     1x,
+                    ./images/team-tablet-product-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile-product-designer.jpg     1x,
+                    ./images/team-mobile-product-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/team-mobile-product-designer.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+        <div class="team-container">
              <h3 class="our-list__who">Ігор Дем'яненко</h3>
             <p lang="en" class="our-list__about">Product Designer</p>
          <ul class="list team-contact">
@@ -176,9 +235,31 @@
               </ul>
             </div>
         </li>
-            
-          <li class="background our-list__team">
-            <img src="./images/img-4.jpg" alt="photo2" width="270" />
+            <li class="our-list__team">
+            <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop-frontend-dev.jpg     1x,
+                    ./images/team-desktop-frontend-dev-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet-frontend-dev.jpg     1x,
+                    ./images/team-tablet-frontend-dev-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile-frontend-dev.jpg     1x,
+                    ./images/team-mobile-frontend-dev-@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/team-mobile-frontend-dev.jpg" alt="Ольга Рєпіна" />
+              </picture>
            <div class="team-container"> 
             <h3 class="our-list__who">Ольга Рєпіна</h3>
             <p lang="en" class="our-list__about">Frontend Developer</p>
@@ -191,8 +272,31 @@
               </ul>
           </div>
           </li>
-          <li class="background our-list__team">
-            <img src="./images/img-5.jpg" alt="photo3" width="270" />
+          <li class="our-list__team">
+           <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop-marketing.jpg     1x,
+                    ./images/team-desktop-marketing-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet-marketing.jpg     1x,
+                    ./images/team-tablet-marketing-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile-marketing.jpg     1x,
+                    ./images/team-mobile-marketing-@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/team-mobile-marketing.jpg" alt="Микола Тарасов" />
+              </picture>
             <div class="team-container"><h3 class="our-list__who">Микола Тарасов</h3>
             <p lang="en" class="our-list__about">Marketing</p>
               <ul class="list team-contact">
@@ -203,8 +307,31 @@
               </ul>
               </div>
           </li>
-          <li class="background our-list__team">
-            <img src="./images/img-6.jpg" alt="photo4" width="270" />
+          <li class="our-list__team">
+            <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop-ui-designer.jpg     1x,
+                    ./images/team-desktop-ui-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet-ui-designer.jpg     1x,
+                    ./images/team-tablet-ui-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile-ui-designer.jpg     1x,
+                    ./images/team-mobile-ui-designer-@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/team-mobile-ui-designer.jpg" alt="Михайло Єрмаков" />
+              </picture>
             <div class="team-container"><h3 class="our-list__who">Михайло Єрмаков</h3>
             <p lang="en" class="our-list__about">UI Designer</p>
            <ul class="list team-contact">
@@ -217,7 +344,7 @@
           </li>
         </ul></div>
       
-      </section> -->
+      </section>
     </main>
     <!-- <section class="section">
       <div class="container">
