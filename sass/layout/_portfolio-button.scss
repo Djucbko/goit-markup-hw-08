@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    
+    -webkit-box-pack: start;
+    flex-direction: row;
         padding-right: 15px;
         padding-left: 15px;
         max-width: 350px;
         margin-bottom: 50px;
         gap: 8px;
+        
 }
 .button-log {
     padding: 6px 22px;
@@ -35,7 +37,11 @@
     background: $hover-logo-buttonfont-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-@media screen and (min-width: $mobile) {}
+ @media screen and (max-width: 767px){
+    .button-list{
+        max-width: 100%;
+ }
+}
 @media screen and (min-width: $tablet) {
 .button-list {
         flex-wrap: nowrap;
