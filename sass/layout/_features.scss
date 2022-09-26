@@ -68,7 +68,7 @@ background-color: #f5f4fa;
 // Tablet//
 @media screen and (min-width: $tablet) {
 .features-list {
-    
+    flex-wrap: wrap;
     @include flexCenter();
     gap:$card-set-gap;  
 }
@@ -103,8 +103,8 @@ background-color: #f5f4fa;
     .features-list {
         @include flexCenter(flex, center, stretch);
         flex-wrap: wrap;
-        gap: $card-set-gap;
-        
+        gap: 30px;
+        text-align: start;
     }
 
     .features-list__head {

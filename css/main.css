@@ -1194,6 +1194,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .features-list {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1230,6 +1231,7 @@ img {
     align-items: stretch;
     flex-wrap: wrap;
     gap: 30px;
+    text-align: start;
   }
   .features-list__head {
     width: calc((100% - 90px) / 4);
