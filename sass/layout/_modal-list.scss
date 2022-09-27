@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
     width: 95vw;
-    height: 609px;
+    
     background-color: #ffffff;
     border-radius: 4px;
     position:absolute;
@@ -176,7 +176,7 @@
     height: 15px;
     border-radius: 2px;
     opacity: 1;
-
+    flex-shrink: 0;
     background-color: #ffffff;
 }
 
@@ -217,7 +217,7 @@
 @media screen and (min-width: $mobile){
     .modal{
     max-width: 450px;
-    max-height: 609px;
+    
 }
 .checkbox-label {
     font-size: 12px;
@@ -226,7 +226,7 @@
 @media screen and (min-width: $desktop) {
    .modal{
     max-width: 528px;
-    max-height: 581px;
+    
    }
    .checkbox-label{
     font-size: 14px;

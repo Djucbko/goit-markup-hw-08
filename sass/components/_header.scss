@@ -1,12 +1,17 @@
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    
 }
+
 .header__main-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
- }
+    padding-bottom: 16px;
+    padding-top: 16px;
+    }
+    
+
  @media screen and (min-width: $tablet){
     .open-mobile-menu{
         display: none;
@@ -14,7 +19,7 @@
    .header__main-nav {
      display: flex;
     align-items: center;
-    
+     padding: 0;
    }
  
  }

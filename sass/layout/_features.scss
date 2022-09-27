@@ -1,11 +1,12 @@
 .features-list {
-    text-align: center;
+    text-align: start;
 }
 .features-list__head:not(:last-child) {
      margin-bottom: $card-set-gap;
 }
 
 .features-list__header {
+   
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -35,7 +36,7 @@
 // Mobile //
 @media screen and (min-width: $mobile){ 
     .features-list{
-        text-align: center;
+        text-align: start;
         
     }
     .features-list__head{
@@ -50,6 +51,7 @@ background-color: #f5f4fa;
         margin-bottom: 30px;
 }
 .features-list__header {
+    
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -62,6 +64,7 @@ background-color: #f5f4fa;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    
 
 }
 }
@@ -79,7 +82,7 @@ background-color: #f5f4fa;
     background-color: #f5f4fa;
         height: 120px;
         border-radius: 4px;
-        margin-bottom: 30px;
+        
 }
 .features-list__header {
     margin-bottom: 10px;
@@ -116,9 +119,7 @@ background-color: #f5f4fa;
 
         height: 120px;
         border-radius: 4px;
-        margin-bottom: 30px;
-
-        background-color: #f5f4fa;
+         background-color: #f5f4fa;
     }
 
     .features-list__header {
@@ -133,5 +134,10 @@ background-color: #f5f4fa;
     .features-list__text {
         font-size: 14px;
         line-height: 1.7;
+    }
+}
+@media screen and (max-width:767px){
+    .features-list__header {
+        text-align: center;
     }
 }
