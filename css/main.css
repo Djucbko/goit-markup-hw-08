@@ -1435,9 +1435,6 @@ footer {
   .features-list {
     text-align: start;
   }
-  .features-list__head {
-    width: calc((100% - 30px) / 2);
-  }
   .features-list__logo {
     display: flex;
     justify-content: center;

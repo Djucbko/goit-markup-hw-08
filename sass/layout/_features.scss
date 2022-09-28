@@ -38,9 +38,7 @@
         
     }
     
-    .features-list__head{
-        width: calc((100% - 30px) / 2);
-    }
+  
     .features-list__logo{
     @include flexCenter();
     
