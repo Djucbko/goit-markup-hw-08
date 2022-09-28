@@ -158,7 +158,8 @@ img {
   .header__main-nav {
     display: flex;
     align-items: center;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .mobile-menu {
@@ -1164,8 +1165,6 @@ footer {
   justify-content: start;
   -webkit-box-pack: start;
   flex-direction: row;
-  padding-right: 15px;
-  padding-left: 15px;
   max-width: 350px;
   margin-bottom: 30px;
   gap: 8px;
@@ -1407,10 +1406,6 @@ footer {
   text-align: start;
 }
 
-.features-list__head:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .features-list__header {
   margin-bottom: 10px;
   font-weight: 700;
@@ -1441,7 +1436,7 @@ footer {
     text-align: start;
   }
   .features-list__head {
-    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
   }
   .features-list__logo {
     display: flex;
